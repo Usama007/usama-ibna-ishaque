@@ -59,11 +59,19 @@ darkTheme.typography.h5 = {
 function App() {
   return (
     <ThemeProvider theme={darkTheme}>
-      <Container maxWidth={false} sx={{ height: "100vh", padding: 5,display:'flex',alignItems:'center' }} >
+      <Container
+        maxWidth={false}
+        sx={{
+          height: "100vh",
+          padding: 5,
+          display: "flex",
+          alignItems: "center",
+         
+        }}
+      >
         <CssBaseline />
-        <Box pb={3}>
-          <Home />
-        </Box>
+
+        <Home />
       </Container>
     </ThemeProvider>
   );

@@ -16,10 +16,11 @@ export default function Home() {
         display: "flex",
         height: "100%",
         alignItems: "center",
+ 
       }}
    
     >
-      <Grid item lg={4} md={4} sm={6} xs={12}>
+      <Grid item lg={4} md={4} sm={6} xs={12} pb={2}>
         <Card sx={{ borderRadius: 5 }}>
           <CardMedia
             component="img"
@@ -30,7 +31,7 @@ export default function Home() {
           />
         </Card>
       </Grid>
-      <Grid item lg={8} md={8} sm={6} xs={12}>
+      <Grid item lg={8} md={8} sm={6} xs={12} pb={2}>
         <Grid container spacing={5} alignSelf="center">
           <Intro />
           <About />
