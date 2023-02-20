@@ -21,13 +21,15 @@ export default function Home() {
    
     >
       <Grid item lg={4} md={4} sm={6} xs={12} pb={2}>
-        <Card sx={{ borderRadius: 5 }}>
+        <Card sx={{ borderRadius: 5 }} elevation={0}>
           <CardMedia
             component="img"
-            sx={{objectFit:'cover'}}
+            sx={{objectFit:'cover',backgroundColor:'#1f1b1a'}}
+          
             height={850}
             srcSet={usama}
-            alt="Paella dish"
+            alt="usama"
+            className="profilePic"
           />
         </Card>
       </Grid>

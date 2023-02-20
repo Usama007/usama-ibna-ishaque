@@ -70,7 +70,7 @@ const itemData = [
 
 export default function Projects({ setOpen }) {
   return (
-    <Paper sx={{ height: "100vh" }}>
+    <Paper sx={{ paddingBottom:5, bgcolor: "#1f1b1a"  }}>
       <AppBar sx={{ position: "relative" }}>
         <Toolbar>
           <IconButton

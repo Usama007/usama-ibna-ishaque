@@ -37,18 +37,23 @@ export default function Portfolio() {
           <Grid container spacing={1} pb={2} alignItems={"center"}>
             <Grid item lg={12}>
               <Grid container pb={2} spacing={2}>
-                <Grid item lg={6} textAlign="left">
-                  <Typography variant="body1">
-                    Total Work Experience :
-                  </Typography>
+                <Grid item lg={6} sm={6} xs={6} textAlign="left">
+                  <Typography variant="body1">Work Experience :</Typography>
                 </Grid>
-                <Grid item lg={6} textAlign="right">
+                <Grid item lg={6} sm={6} xs={6} textAlign="right">
                   <Typography variant="body1">5 Years</Typography>
                 </Grid>
-                <Grid item lg={6} textAlign="left">
+                <Grid item lg={6} sm={6} xs={5} textAlign="left">
                   <Typography variant="body1">Current Workplace :</Typography>
                 </Grid>
-                <Grid item lg={6} display={"flex"} justifyContent={"flex-end"}>
+                <Grid
+                  item
+                  lg={6}
+                  sm={6}
+                  xs={7}
+                  display={"flex"}
+                  justifyContent={"flex-end"}
+                >
                   <Link
                     href="https://techcare.co/"
                     sx={{
@@ -67,7 +72,7 @@ export default function Portfolio() {
             <Grid item lg={12}>
               <Grid container>
                 <Grid item lg={3}>
-                  <Typography variant="body1" sx={{ textAlign: "left" }}>
+                  <Typography variant="body1" gutterBottom sx={{ textAlign: "left" }}>
                     Worked With :
                   </Typography>
                 </Grid>
@@ -122,7 +127,7 @@ export default function Portfolio() {
           </Grid>
           <Divider sx={{ marginTop: 1, marginBottom: 2 }} />
 
-          <Grid container spacing={5}>
+          <Grid container spacing={3}  justifyContent="center">
             <Grid item lg={6}>
               <Button
                 variant="outlined"

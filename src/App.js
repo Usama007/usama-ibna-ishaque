@@ -13,7 +13,7 @@ let darkTheme = createTheme({
   palette: {
     background: {
       default: "#1f1b1a",
-      paper: "#0a1929",
+      paper: "#656c6d",
     },
     secondary: {
       main: "#00e5ff",
