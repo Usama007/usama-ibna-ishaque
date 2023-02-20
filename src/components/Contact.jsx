@@ -47,7 +47,7 @@ export default function Contact() {
                   </Typography>
 
                   <Typography gutterBottom className="contactTypo" pb={1}>
-                    Date of Birth : 20 March, 1994
+                   Address : Dhaka, Bangladesh
                   </Typography>
 
                   <Typography>Date of Birth : 20 March, 1994</Typography>
