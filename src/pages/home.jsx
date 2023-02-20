@@ -17,6 +17,7 @@ export default function Home() {
         height: "100%",
         alignItems: "center",
       }}
+   
     >
       <Grid item lg={4} md={4} sm={6} xs={12}>
         <Card sx={{ borderRadius: 5 }}>

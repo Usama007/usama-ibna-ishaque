@@ -1,5 +1,6 @@
 import "./App.css";
 import {
+  Box,
   Container,
   createTheme,
   CssBaseline,
@@ -46,7 +47,7 @@ darkTheme.typography.h2 = {
 
 darkTheme.typography.h5 = {
   fontSize: ".9rem",
-  color:"#00e5ff",
+  color: "#00e5ff",
   "@media (min-width:600px)": {
     fontSize: "1rem",
   },
@@ -58,10 +59,11 @@ darkTheme.typography.h5 = {
 function App() {
   return (
     <ThemeProvider theme={darkTheme}>
-      <Container maxWidth={false} sx={{ height: "100vh", padding: 5 }}>
+      <Container maxWidth={false} sx={{ height: "100vh", padding: 5,display:'flex',alignItems:'center' }} >
         <CssBaseline />
-
-        <Home />
+        <Box pb={3}>
+          <Home />
+        </Box>
       </Container>
     </ThemeProvider>
   );

@@ -50,7 +50,7 @@ export default function Contact() {
                    Address : Dhaka, Bangladesh
                   </Typography>
 
-                  <Typography>Date of Birth : 20 March, 1994</Typography>
+                  <Typography gutterBottom>Date of Birth : 20 March, 1994</Typography>
                 </Grid>
 
                 <Grid item lg={6} textAlign={"left"}>

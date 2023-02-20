@@ -18,7 +18,7 @@ export default function About() {
             Computer Science and Software Engineering from American
             International University- Bangladesh. Currently working as a
             software engineer. <br /> <br /> My expertise lies in mobile
-            application development and front-end development
+            application development and front-end development.
           </Typography>
         </CardContent>
       </Card>
