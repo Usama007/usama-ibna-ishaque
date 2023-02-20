@@ -39,7 +39,7 @@ export default function Portfolio() {
               <Grid container pb={2} spacing={2}>
                 <Grid item lg={6} textAlign="left">
                   <Typography variant="body1">
-                    Total Work Expirence :
+                    Total Work Experience :
                   </Typography>
                 </Grid>
                 <Grid item lg={6} textAlign="right">
