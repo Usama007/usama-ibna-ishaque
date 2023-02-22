@@ -40,7 +40,7 @@ darkTheme.typography.h2 = {
     marginBottom: 0,
   },
   [darkTheme.breakpoints.up("md")]: {
-    fontSize: "2.4rem",
+    fontSize: "1.6rem",
     marginBottom: 0,
   },
 };
@@ -55,6 +55,21 @@ darkTheme.typography.h5 = {
     fontSize: "1.2rem",
   },
 };
+
+darkTheme.typography.body1 = {
+  fontSize: ".6rem",
+  color:'#fff',
+  "@media (min-width:600px)": {
+    fontSize: ".7rem",
+  },
+  [darkTheme.breakpoints.up("md")]: {
+    fontSize: ".93rem",
+  },
+  [darkTheme.breakpoints.up("lg")]: {
+    fontSize: "1.1rem",
+  },
+};
+
 
 function App() {
   return (

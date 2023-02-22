@@ -4,7 +4,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <Grid item lg={6} md={6} sm={12} xs={12} alignSelf={"center"}>
+    <Grid item lg={6} md={4} sm={12} xs={12} alignSelf={"center"}>
       <Card className="card" sx={{ borderRadius: 5 }}>
         <CardContent className="cardContent">
           <Typography variant="h2" gutterBottom>

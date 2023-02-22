@@ -20,7 +20,7 @@ export default function Contact() {
           <Divider sx={{ color: "#fff", paddingBottom: 2 }}>
             <ContactMail className="icon" />
           </Divider>
-          <Grid container>
+          <Grid container sx={{maxHeight:280,overflow:'auto'}}>
             <Grid item lg={12}>
               <Grid container>
                 <Grid item lg={12}>

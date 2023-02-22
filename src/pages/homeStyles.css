@@ -45,13 +45,13 @@
 @media screen and (width> 750px) and (width< 1200px) {
   .card {
     height: 380px;
-    width: 540px;
+    width: 18rem;
   }
 }
 
 @media screen and (width> 1200px) {
   .card {
     height: 400px;
-    width: 560px;
+    width: 30vw;
   }
 }
