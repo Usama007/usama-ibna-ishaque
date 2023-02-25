@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/usama-ibna-ishaque/static/css/main.d36418d5.css",
-    "main.js": "/usama-ibna-ishaque/static/js/main.c13c69e5.js",
+    "main.css": "/usama-ibna-ishaque/static/css/main.e3d4753a.css",
+    "main.js": "/usama-ibna-ishaque/static/js/main.da0054be.js",
     "static/js/787.f51765bc.chunk.js": "/usama-ibna-ishaque/static/js/787.f51765bc.chunk.js",
     "static/media/usama.jpg": "/usama-ibna-ishaque/static/media/usama.a1d379260ce728beb9a7.jpg",
     "static/media/chefonline.png": "/usama-ibna-ishaque/static/media/chefonline.71f5a648883643209abe.png",
@@ -27,12 +27,12 @@
     "static/media/poppins-latin-ext-300-normal.woff2": "/usama-ibna-ishaque/static/media/poppins-latin-ext-300-normal.b0bb003afc8483bd32d2.woff2",
     "static/media/poppins-latin-ext-700-normal.woff2": "/usama-ibna-ishaque/static/media/poppins-latin-ext-700-normal.63d2a69665d58b22ceea.woff2",
     "index.html": "/usama-ibna-ishaque/index.html",
-    "main.d36418d5.css.map": "/usama-ibna-ishaque/static/css/main.d36418d5.css.map",
-    "main.c13c69e5.js.map": "/usama-ibna-ishaque/static/js/main.c13c69e5.js.map",
+    "main.e3d4753a.css.map": "/usama-ibna-ishaque/static/css/main.e3d4753a.css.map",
+    "main.da0054be.js.map": "/usama-ibna-ishaque/static/js/main.da0054be.js.map",
     "787.f51765bc.chunk.js.map": "/usama-ibna-ishaque/static/js/787.f51765bc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d36418d5.css",
-    "static/js/main.c13c69e5.js"
+    "static/css/main.e3d4753a.css",
+    "static/js/main.da0054be.js"
   ]
 }
