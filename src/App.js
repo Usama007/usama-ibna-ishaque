@@ -56,19 +56,19 @@ darkTheme.typography.h5 = {
   },
 };
 
-darkTheme.typography.body1 = {
-  fontSize: ".6rem",
-  color:'#fff',
-  "@media (min-width:600px)": {
-    fontSize: ".7rem",
-  },
-  [darkTheme.breakpoints.up("md")]: {
-    fontSize: ".93rem",
-  },
-  [darkTheme.breakpoints.up("lg")]: {
-    fontSize: "1.1rem",
-  },
-};
+// darkTheme.typography.body1 = {
+//   fontSize: ".6rem",
+//   color:'#fff',
+//   "@media (min-width:600px)": {
+//     fontSize: ".7rem",
+//   },
+//   [darkTheme.breakpoints.up("md")]: {
+//     fontSize: ".93rem",
+//   },
+//   [darkTheme.breakpoints.up("lg")]: {
+//     fontSize: "1.1rem",
+//   },
+// };
 
 
 function App() {

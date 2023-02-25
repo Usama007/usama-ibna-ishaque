@@ -22,6 +22,14 @@
   font-size: 0.95rem !important;
 }
 
+.intro{
+  width: 100%;
+
+}
+.name{
+  font-weight: bold!important;
+}
+
 .icon {
   color: #00e5ff;
   margin-top: 5px;
@@ -29,6 +37,9 @@
 }
 
 @media screen and (width< 413px) {
+  .name{
+    font-size: 1.5rem!important;
+  }
   .profilePic {
     height: 65vh;
     object-fit: contain !important;
@@ -36,6 +47,9 @@
 }
 
 @media screen and (width> 413px) and (width< 750px) {
+  .name{
+    font-size: 1.9rem!important;
+  }
   .profilePic {
     height: 75vh;
     object-fit: contain !important;
@@ -43,13 +57,23 @@
 }
 
 @media screen and (width> 750px) and (width< 1200px) {
+  .name{
+    font-size: 2rem!important;
+  }
+  .profilePic {
+    height: 75vh;
+    object-fit: contain !important;
+  }
   .card {
     height: 380px;
-    width: 18rem;
+    width: '100%';
   }
 }
 
 @media screen and (width> 1200px) {
+  .name{
+    font-size: 2.5rem!important;
+  }
   .card {
     height: 400px;
     width: 30vw;
