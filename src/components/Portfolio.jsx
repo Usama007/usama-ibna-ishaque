@@ -34,9 +34,9 @@ export default function Portfolio() {
             <Work className="icon" />{" "}
           </Divider>
 
-          <Grid container spacing={1} pb={2} alignItems={"center"}>
-            <Grid item lg={12}>
-              <Grid container pb={2} spacing={2}>
+          <Grid container spacing={1} pb={2} >
+            <Grid item lg={12} sx={{justifyContent:'space-between',width:'100%'}}>
+              <Grid container pb={2} spacing={2} >
                 <Grid item lg={6} sm={6} xs={6} textAlign="left">
                   <Typography variant="body1">Work Experience :</Typography>
                 </Grid>
@@ -70,14 +70,14 @@ export default function Portfolio() {
             </Grid>
 
             <Grid item lg={12}>
-              <Grid container>
+              <Grid container  spacing={1}>
                 <Grid item lg={3}>
                   <Typography variant="body1" gutterBottom sx={{ textAlign: "left" }}>
                     Worked With :
                   </Typography>
                 </Grid>
                 <Grid item lg={9}>
-                  <Grid container spacing={0.8}>
+                  <Grid container spacing={2} >
                     <Grid item>
                       <Chip
                         color="secondary"
