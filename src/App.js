@@ -1,6 +1,5 @@
 import "./App.css";
 import {
-  Box,
   Container,
   createTheme,
   CssBaseline,
@@ -70,7 +69,6 @@ darkTheme.typography.h5 = {
 //   },
 // };
 
-
 function App() {
   return (
     <ThemeProvider theme={darkTheme}>
@@ -81,7 +79,6 @@ function App() {
           padding: 5,
           display: "flex",
           alignItems: "center",
-         
         }}
       >
         <CssBaseline />

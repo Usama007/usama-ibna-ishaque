@@ -1,22 +1,23 @@
-import { Android, Apple, Close, Info, OpenInNew } from "@mui/icons-material";
+import { Android, Apple, Close, OpenInNew } from "@mui/icons-material";
 import {
   AppBar,
+  Box,
   Button,
   Card,
   CardActions,
   CardContent,
   CardMedia,
+  CircularProgress,
   Container,
   Divider,
   Grid,
   IconButton,
-  ImageListItem,
-  ImageListItemBar,
   Paper,
+  
   Toolbar,
   Typography,
 } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import chefonline from "./../assets/images/chefonline.png";
 import chefonlinePartner from "./../assets/images/chefonline-partner.png";
 import divethruApp from "./../assets/images/divethru-app.png";
@@ -28,10 +29,13 @@ const itemData = [
   {
     img: divethruApp,
     title: "DiveThru Mobile App",
-    description: "Find therapist who gets access one-on-one, couples or family through app.",
+    description:
+      "Find therapist who gets access one-on-one, couples or family through app.",
     isApp: true,
-    linkIos:"https://apps.apple.com/us/app/divethru-mental-health-app/id1383605874",
-    linkadroid:"https://play.google.com/store/apps/details?id=com.divethru.divethru",
+    linkIos:
+      "https://apps.apple.com/us/app/divethru-mental-health-app/id1383605874",
+    linkadroid:
+      "https://play.google.com/store/apps/details?id=com.divethru.divethru",
   },
   {
     img: chefonline,
@@ -39,16 +43,19 @@ const itemData = [
     description:
       "An online food ordering platform from different restaurants in UK.",
     isApp: true,
-    linkIos:"https://apps.apple.com/us/app/id1007229418#?platform=iphone",
-    linkadroid:"https://play.google.com/store/apps/details?id=com.chefonline.chefonline",
+    linkIos: "https://apps.apple.com/us/app/id1007229418#?platform=iphone",
+    linkadroid:
+      "https://play.google.com/store/apps/details?id=com.chefonline.chefonline",
   },
   {
     img: chefonlinePartner,
     title: "ChefOnline Partner Mobile App",
     description: "Manager's app for the owener of different restaurants in UK.",
     isApp: true,
-    linkIos:"https://apps.apple.com/us/app/chefonline-manager/id1035647794#?platform=iphone",
-    linkadroid:"https://play.google.com/store/apps/details?id=com.lechef.SRSIT",
+    linkIos:
+      "https://apps.apple.com/us/app/chefonline-manager/id1035647794#?platform=iphone",
+    linkadroid:
+      "https://play.google.com/store/apps/details?id=com.lechef.SRSIT",
   },
   {
     img: aroma,
@@ -56,16 +63,19 @@ const itemData = [
     description:
       "An online food ordering app from Aroma Radlett restaurant in UK.",
     isApp: true,
-    linkIos:"https://apps.apple.com/us/app/aroma-radlett/id1123929095#?platform=iphone",
-    linkadroid:"https://play.google.com/store/apps/details?id=com.lechef.Radlett",
+    linkIos:
+      "https://apps.apple.com/us/app/aroma-radlett/id1123929095#?platform=iphone",
+    linkadroid:
+      "https://play.google.com/store/apps/details?id=com.lechef.Radlett",
   },
   {
     img: divethruWeb,
     title: "DiveThru Web App",
-    description: "An online mental therapy platform. Through in-person studios and online platform connect today’s generation with therapy, community and self-guided resources.",
+    description:
+      "An online mental therapy platform. Through in-person studios and online platform connect today’s generation with therapy, community and self-guided resources.",
     col: 6,
     isApp: false,
-    link:"https://app.divethru.com/"
+    link: "https://app.divethru.com/",
   },
   {
     img: movieLibrary,
@@ -74,13 +84,15 @@ const itemData = [
       "A sample website developed using ReactJs & Material UI. Moreover 'themoviedb.org' is used as API.",
     col: 6,
     isApp: false,
-    link:"https://usama007.github.io/movie-library-web/"
+    link: "https://usama007.github.io/movie-library-web/",
   },
 ];
 
 export default function Projects({ setOpen }) {
+  const [loading, setLoading] = useState(true);
+
   return (
-    <Paper sx={{ paddingBottom:5, bgcolor: "#1f1b1a"  }}>
+    <Paper sx={{ paddingBottom: 5, bgcolor: "#1f1b1a" }}>
       <AppBar sx={{ position: "relative" }}>
         <Toolbar>
           <IconButton
@@ -108,13 +120,30 @@ export default function Projects({ setOpen }) {
         <Grid container spacing={3} mt={2} justifyContent="center">
           {itemData.map((item) => (
             <Grid item lg={item?.col ?? 3} key={item.img}>
-              <Card sx={{ borderRadius: 5}} elevation={3}>
+              <Card sx={{ borderRadius: 5 }} elevation={3}>
+                {loading && (
+                  <Box
+                    sx={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      paddingTop: 5,
+                      paddingBottom: 5,
+                    }}
+                  >
+                    <CircularProgress />
+                  </Box>
+                )}
                 <CardMedia
                   component={"img"}
                   width={400}
                   sx={[{ objectFit: "fill", height: item?.col ? 400 : 530 }]}
                   srcSet={item.img}
+                  onLoad={() => {
+                    setLoading(true);
+                  }}
                 />
+
                 <CardContent sx={{ bgcolor: "#656c6d" }}>
                   <Typography
                     variant="h5"
@@ -136,7 +165,7 @@ export default function Projects({ setOpen }) {
                     bgcolor: "#656c6d",
                     justifyContent: "center",
                     alignItems: "center",
-                    paddingBottom:3
+                    paddingBottom: 3,
                   }}
                 >
                   {item?.isApp ? (
