@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/usama-ibna-ishaque/static/css/main.e3d4753a.css",
-    "main.js": "/usama-ibna-ishaque/static/js/main.825c8c89.js",
+    "main.js": "/usama-ibna-ishaque/static/js/main.c5d6681a.js",
     "static/js/787.f51765bc.chunk.js": "/usama-ibna-ishaque/static/js/787.f51765bc.chunk.js",
     "static/media/movieLibrary.png": "/usama-ibna-ishaque/static/media/movieLibrary.c8a5ed76f1224196c770.png",
     "static/media/usama.jpg": "/usama-ibna-ishaque/static/media/usama.a1d379260ce728beb9a7.jpg",
@@ -29,11 +29,11 @@
     "static/media/poppins-latin-ext-700-normal.woff2": "/usama-ibna-ishaque/static/media/poppins-latin-ext-700-normal.63d2a69665d58b22ceea.woff2",
     "index.html": "/usama-ibna-ishaque/index.html",
     "main.e3d4753a.css.map": "/usama-ibna-ishaque/static/css/main.e3d4753a.css.map",
-    "main.825c8c89.js.map": "/usama-ibna-ishaque/static/js/main.825c8c89.js.map",
+    "main.c5d6681a.js.map": "/usama-ibna-ishaque/static/js/main.c5d6681a.js.map",
     "787.f51765bc.chunk.js.map": "/usama-ibna-ishaque/static/js/787.f51765bc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e3d4753a.css",
-    "static/js/main.825c8c89.js"
+    "static/js/main.c5d6681a.js"
   ]
 }
