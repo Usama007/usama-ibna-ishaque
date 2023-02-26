@@ -21,6 +21,7 @@ import chefonline from "./../assets/images/chefonline.png";
 import chefonlinePartner from "./../assets/images/chefonline-partner.png";
 import divethruApp from "./../assets/images/divethru-app.png";
 import divethruWeb from "./../assets/images/divethru-webpng.png";
+import movieLibrary from "./../assets/images/movieLibrary.png";
 import aroma from "./../assets/images/aroma.png";
 
 const itemData = [
@@ -66,6 +67,15 @@ const itemData = [
     isApp: false,
     link:"https://app.divethru.com/"
   },
+  {
+    img: movieLibrary,
+    title: "Movie Library Sample Web App",
+    description:
+      "A sample website developed using ReactJs & Material UI. Moreover 'themoviedb.org' is used as API.",
+    col: 6,
+    isApp: false,
+    link:"https://usama007.github.io/movie-library-web/"
+  },
 ];
 
 export default function Projects({ setOpen }) {
@@ -102,7 +112,7 @@ export default function Projects({ setOpen }) {
                 <CardMedia
                   component={"img"}
                   width={400}
-                  sx={[{ objectFit: "fill", height: item?.col ? "auto" : 530 }]}
+                  sx={[{ objectFit: "fill", height: item?.col ? 400 : 530 }]}
                   srcSet={item.img}
                 />
                 <CardContent sx={{ bgcolor: "#656c6d" }}>
