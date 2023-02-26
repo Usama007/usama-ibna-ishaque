@@ -140,7 +140,7 @@ export default function Projects({ setOpen }) {
                   sx={[{ objectFit: "fill", height: item?.col ? 400 : 530 }]}
                   srcSet={item.img}
                   onLoad={() => {
-                    setLoading(true);
+                    setLoading(false);
                   }}
                 />
 
