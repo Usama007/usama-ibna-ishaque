@@ -13,7 +13,7 @@ import {
   Grid,
   IconButton,
   Paper,
-  
+  Skeleton,
   Toolbar,
   Typography,
 } from "@mui/material";
@@ -92,7 +92,7 @@ export default function Projects({ setOpen }) {
   const [loading, setLoading] = useState(true);
 
   return (
-    <Paper sx={{ paddingBottom: 5, bgcolor: "#1f1b1a" }}>
+    <Paper sx={{ paddingBottom: 5, bgcolor: "#1f1b1a", height: "100vh" }}>
       <AppBar sx={{ position: "relative" }}>
         <Toolbar>
           <IconButton
@@ -121,19 +121,7 @@ export default function Projects({ setOpen }) {
           {itemData.map((item) => (
             <Grid item lg={item?.col ?? 3} key={item.img}>
               <Card sx={{ borderRadius: 5 }} elevation={3}>
-                {loading && (
-                  <Box
-                    sx={{
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      paddingTop: 5,
-                      paddingBottom: 5,
-                    }}
-                  >
-                    <CircularProgress />
-                  </Box>
-                )}
+              {loading && <Skeleton height={400} />}
                 <CardMedia
                   component={"img"}
                   width={400}
@@ -142,6 +130,7 @@ export default function Projects({ setOpen }) {
                   onLoad={() => {
                     setLoading(false);
                   }}
+                  style={{ display: loading ? "none" : "block" }}
                 />
 
                 <CardContent sx={{ bgcolor: "#656c6d" }}>
