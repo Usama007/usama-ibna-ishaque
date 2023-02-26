@@ -92,7 +92,7 @@ export default function Projects({ setOpen }) {
   const [loading, setLoading] = useState(true);
 
   return (
-    <Paper sx={{ paddingBottom: 5, bgcolor: "#1f1b1a", minHeight: "100vh" }}>
+    <Paper sx={{ paddingBottom: 5, bgcolor: "#1f1b1a",  }}>
       <AppBar sx={{ position: "relative" }}>
         <Toolbar>
           <IconButton
